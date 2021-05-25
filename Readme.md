@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Мария Жолудева](https://up.htmlacademy.ru/javascript/23/user/1447971).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus).
 
 ---
 
