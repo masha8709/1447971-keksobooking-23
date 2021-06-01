@@ -17,17 +17,11 @@ getRandomIntInclusive(1, 5);
 function getRandomFloat(min, max, floatPoint) {
   min = min.toFixed(floatPoint);
   max = max.toFixed(floatPoint);
+  if (min >= 0 && max > min) {
+    return Math.random() * (max - min + 1) + min;
+  } else {
+    throw new getRandomFloat('Неверно указан диапазон', 'Неверно указан диапазон');
+  }
 }
 
 getRandomFloat(11.87665, 101.454545, 3);
-
-// function getRandomFloat(min, max, floatPoint) {
-//   min = min.toFixed(floatPoint);
-//   max = max.toFixed(floatPoint);
-//   if (min >= 0 && max > min) {
-//     return Math.random() * (max - min + 1) + min;
-//   } else {
-//     throw new getRandomFloat('Неверно указан диапазон', 'Неверно указан диапазон');
-//   }
-// }
-// getRandomFloat(11.87665, 101.454545, 3);
