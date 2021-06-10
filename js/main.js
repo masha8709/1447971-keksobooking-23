@@ -1,27 +1,19 @@
-// Взяла основу функции с MDN
 
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  if (min >= 0 && max > min) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  } else {
-    throw new getRandomIntInclusive('Неверно указан диапазон', 'Неверно указан диапазон');
-  }
+function getRandomIntInclusive(number1, number2) {
+  const lower = Math.ceil(Math.min(Math.abs(number1), Math.abs(number2)));
+  const upper = Math.floor(Math.max(Math.abs(number1), Math.abs(number2)));
+  const result = Math.random() * (upper - lower + 1) + lower;
+  return Math.floor(result);
 }
 
 getRandomIntInclusive(1, 5);
 
-//Основу функции взяла с https://myrusakov.ru/js-random-numbers.html
 
-function getRandomFloat(min, max, floatPoint) {
-  min = min.toFixed(floatPoint);
-  max = max.toFixed(floatPoint);
-  if (min >= 0 && max > min) {
-    return Math.random() * (max - min + 1) + min;
-  } else {
-    throw new getRandomFloat('Неверно указан диапазон', 'Неверно указан диапазон');
-  }
+function getRandomFloat(number1, number2, digits = 1) {
+  const lower = Math.min(Math.abs(number1), Math.abs(number2));
+  const upper = Math.max(Math.abs(number1), Math.abs(number2));
+  const result = Math.random() * (upper - lower) + lower;
+  return result.toFixed(digits);
 }
 
 getRandomFloat(11.87665, 101.454545, 3);
