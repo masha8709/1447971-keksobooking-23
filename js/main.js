@@ -1,3 +1,4 @@
+/* eslint-disable id-length */
 
 function getRandomIntInclusive(number1, number2) {
   const lower = Math.ceil(Math.min(Math.abs(number1), Math.abs(number2)));
@@ -32,7 +33,7 @@ const getAvatar = function () {
     counter++;
 
     if (counter < 10) {
-      counter = '0' + counter;
+      counter = `0${  counter}`;
     }
     avatar = `img/avatars/user${counter}.png`;
   }
