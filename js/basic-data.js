@@ -6,13 +6,16 @@ const timeCheck = ['12:00', '13:00', '14:00'];
 const facilities = ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'];
 const arrayOfFhoto = ['https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/duonguyen-8LrGtIxxa4w.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/brandon-hoogenboom-SNxQGWxZQi0.jpg', 'https://assets.htmlacademy.ru/content/intensive/javascript-1/keksobooking/claire-rendall-b6kAwr1i0Iw.jpg'];
 
+const lat = getRandomFloat(35.65000, 35.70000);
+const lng = getRandomFloat(139.70000, 139.80000);
+
 const author = {
   avatar: getAvatar(),
 };
 
 const offer = {
   title: 'Очень хорошее предложение',
-  address: '', //Я так  и додумалась, как мне можно получить строку из lat  и lng, которые в location
+  address: `${lat} ${lng}`,
   price: getRandomIntInclusive(0, 1000000),
   type: getRandomItem(accomodation),
   rooms: getRandomIntInclusive(1, 100),
@@ -23,8 +26,8 @@ const offer = {
   description: 'Очень красивое помещение',
   photos: getListElements(arrayOfFhoto, 1),
   location: {
-    lat: getRandomFloat(35.65000, 35.70000),
-    lng: getRandomFloat(139.70000, 139.80000),
+    lat: lat,
+    lng: lng,
   },
 };
 

@@ -1,3 +1,4 @@
+/* eslint-disable id-length */
 function getRandomIntInclusive(number1, number2) {
   const lower = Math.ceil(Math.min(Math.abs(number1), Math.abs(number2)));
   const upper = Math.floor(Math.max(Math.abs(number1), Math.abs(number2)));

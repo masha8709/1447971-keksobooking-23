@@ -1,3 +1,4 @@
+/* eslint-disable id-length */
 import { author, offer} from './basic-data.js';
 
 function getAvatar() {
