@@ -100,4 +100,4 @@
 //   arrayOfObj.push(offer);
 // }
 
-import './create-data';
+import './create-data.js';

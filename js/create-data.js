@@ -1,6 +1,6 @@
-import { author, offer} from './basic-data';
+import { author, offer} from './basic-data.js';
 
-const getAvatar = function () {
+function getAvatar() {
   let counter = 0;
   let avatar = '';
 
@@ -13,7 +13,7 @@ const getAvatar = function () {
     avatar = `img/avatars/user${counter}.png`;
   }
   return avatar;
-};
+}
 
 export { getAvatar};
 
