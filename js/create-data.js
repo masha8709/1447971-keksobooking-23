@@ -23,7 +23,11 @@ for (let i = 1; i <= 10; i++) {
   arrayOfAvatars.push(author);
 }
 
+export { arrayOfAvatars};
+
 const arrayOfObj = [];
 for (let i = 1; i <= 10; i++) {
   arrayOfObj.push(offer);
 }
+
+export { arrayOfObj};

@@ -45,4 +45,4 @@ function getListElements(array, counter) {
   return newArray;
 }
 
-export {getRandomIntInclusive, getRandomFloat, getRandomItem, getListElements};
+export { getRandomIntInclusive, getRandomFloat, getRandomItem, getListElements};
